@@ -45,9 +45,26 @@ details.age = 22 // age lai change garda = sign use gareko
  
  
     //console.log(object1)
-    console.log(Object.keys(object1.fullname.userfullname));
-    console.log(Object.values(object1.fullname.userfullname));
-    console.log(Object.entries(object1.fullname.userfullname));
+    //console.log(Object.keys(object1.fullname.userfullname));
+    //console.log(Object.values(object1.fullname.userfullname));
+    //console.log(Object.entries(object1.fullname.userfullname));
+
+
+    //****************** Destructuring of objects *********************************/
+    
+    const course ={
+        course_name : "javascript",
+        course_ID : "csc-921",
+        course_cost : 900,
+        course_instructor : "prasanna"
+    }
+    //console.log(`hello this is course description, ${course.course_ID}`);
+
+    const {course_name: Cname} = course // destructuring gareko time t otime call garna sajilo hoss vanera , yesto garda hareko choti  course.coursename garera call garirakhnu pardaina
+    console.log(Cname);
+     const {course_ID : id} = course
+     console.log(id);
+     
     
     
     
